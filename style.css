@@ -4,7 +4,7 @@ body{
     padding: 50px;
     display: flex;
     margin: 0;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
@@ -55,7 +55,7 @@ button{
     margin-top: 10px;
     font-weight: bold;
     border-radius: 7px;
-    transform: 0.2;
+    transform: 0.2s;
     transition: background-color 0.3s;
 }
 
@@ -84,3 +84,95 @@ button{
     font-size: 18px;
     margin: 0;
 }
+
+
+
+
+
+/* --- Base Styles (Mobile First / Universal) --- */
+@media(max-width: 600px) {
+    .container { 
+    background-color: rgb(250, 235, 235); 
+    padding: 20px; 
+    border-radius: 14px; 
+    width: 100%; 
+    max-width: 350px; 
+    box-sizing: border-box; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    margin: 0 auto; 
+  }
+  
+  h1 { 
+    margin-bottom: 15px; 
+    color: #333; 
+    font-size: 1.5rem; 
+  }
+  
+  .input-group { 
+    text-align: left; 
+    margin-bottom: 12px; 
+  }
+  
+  label { 
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: 600; 
+    color: #333; 
+  }
+  
+  input { 
+    padding: 10px; 
+    border: 2px solid #ccc; 
+    border-radius: 7px; 
+    width: 100%; 
+    font-size: 14px; 
+    transition: border-color 0.3s ease; 
+    box-sizing: border-box;
+  }
+  
+  button { 
+    padding: 12px; 
+    width: 100%; 
+    background-color: rgb(245, 128, 128); 
+    color: white; 
+    border: none; 
+    margin-top: 10px; 
+    font-weight: bold; 
+    border-radius: 7px; 
+    transition: background-color 0.3s, transform 0.2s; 
+  }
+  
+  button:hover { 
+    background-color: rgb(208, 122, 122); 
+    transform: translateY(-3px); 
+  }
+  
+  #interestBox, #paymentBox { 
+    margin-top: 20px; 
+    background-color: rgb(236, 186, 186); 
+    padding: 12px; 
+    border-radius: 8px; 
+    border: 1px dashed rgb(236, 186, 186); 
+    box-sizing: border-box;
+  }
+  
+  #result, #total { 
+    color: rgb(114, 50, 50); 
+    font-size: 18px; 
+    margin: 0; 
+  }}
+  
+  /* --- Tablet Responsive Breakpoint--- */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+      padding: 30px 40px; 
+      max-width: 400px;
+    }
+
+
+    h1 {
+      font-size: 2rem; 
+    }
+  }
+  
