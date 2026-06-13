@@ -6,7 +6,7 @@ body{
     margin: 0;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+  
 }
 .container{
     background-color: rgb(250, 235, 235);
@@ -106,7 +106,7 @@ button{
   h1 { 
     margin-bottom: 12px; 
     color: #333; 
-    font-size: 1.5rem; 
+    font-size: 1.2rem; 
   }
   
   .input-group { 
@@ -159,7 +159,7 @@ button{
   
   #result, #total { 
     color: rgb(114, 50, 50); 
-    font-size: 10px; 
+    font-size: 15px; 
     margin: 0; 
   }}
   
